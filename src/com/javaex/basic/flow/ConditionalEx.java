@@ -10,7 +10,8 @@ public class ConditionalEx {
 //		ifPractice01();
 //		switchEx();
 //		switchEx2();
-		switchPractice();
+//		switchPractice();
+		switchPractice2();
 	}
 
 //	private static void ifEx() {
@@ -195,4 +196,24 @@ public class ConditionalEx {
 		
 		System.out.println(day + "에는 " + action);
 	}
+	
+	private static void switchPractice2() {
+		
+		Scanner scanner = new scanner(System.in);
+		System.out.println("점수를 입력하세요");
+		
+		int score = scanner.nextInt();
+		
+		if (score >= 90) {
+		System.out.println("A등급");
+		} else if 
+		
+		
+		}
+		
+		
+		
+		
+}
+
 }
