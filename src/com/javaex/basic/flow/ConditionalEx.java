@@ -199,17 +199,25 @@ public class ConditionalEx {
 	
 	private static void switchPractice2() {
 		
-		Scanner scanner = new scanner(System.in);
+		Scanner scanner = new Scanner(System.in);
 		System.out.println("점수를 입력하세요");
 		
 		int score = scanner.nextInt();
-		
-		if (score >= 90) {
-		System.out.println("A등급");
-		} else if ( score 80 >= 89) {
-		System.out.println("B등급");
-		}
-		
+//		
+//		if (score >= 90) {
+//		System.out.println("A등급");
+//		} else if ( score 80 <= 89) {
+//		System.out.println("B등급");
+//		} else if (score 70 <= 79) {
+//			System.out.println("C등급");
+//		} else if (score 60 <= 69) {
+//			System.out.println("D등급");
+//		} else (score < 60) {
+////			System.out.println("F등급");
+//		}
+//		
+//		
+//		
 		
 		
 		
