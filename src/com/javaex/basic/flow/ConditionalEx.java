@@ -206,9 +206,8 @@ public class ConditionalEx {
 		
 		if (score >= 90) {
 		System.out.println("A등급");
-		} else if 
-		
-		
+		} else if ( score 80 >= 89) {
+		System.out.println("B등급");
 		}
 		
 		
