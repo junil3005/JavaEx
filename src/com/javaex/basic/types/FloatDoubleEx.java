@@ -20,10 +20,10 @@ public class FloatDoubleEx {
 		System.out.println("doubleVar:" + doubleVar);
 		System.out.println("floatVar:" + floatVar);
 		
-		// 부동소수점 처리 유의사항
-		// float, double은 정밀도 포기, 표현 범위 넓힌 것
-		// 정밀한 실수 계산을 할때는 다른 방법을 사용
-		System.out.println(0.1 * 3);
+//		// 부동소수점 처리 유의사항
+//		// float, double은 정밀도 포기, 표현 범위 넓힌 것
+//		// 정밀한 실수 계산을 할때는 다른 방법을 사용
+//		System.out.println(0.1 * 3);
 		
 	}
 

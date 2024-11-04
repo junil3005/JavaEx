@@ -13,8 +13,9 @@ public class ConsoleEx {
 	
 
 	public static void main(String[] args) {
-//		consoleOutput();
+		consoleOutput();
 		consoleInput();
+		
 	}
 	
 	// 콘솔 입력 예제
@@ -24,7 +25,7 @@ public class ConsoleEx {
 		
 		// java.lang 이외의 기능을 불러올 때는 import 필요
 		Scanner scanner = new Scanner(System.in);
-		
+			
 		
 		
 		// 이름과 나이를 물어봐서 출력하는 프로그램

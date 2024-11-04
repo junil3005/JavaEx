@@ -16,8 +16,10 @@ public class ConstantEx {
 		System.out.println("제한 속도 " +
 				SPEED_LIMIT + "이하로 주행해 주세요.");
 		
-		
 	
 	}
+		
 
 }
+
+
