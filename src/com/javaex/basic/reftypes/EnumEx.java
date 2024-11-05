@@ -10,7 +10,7 @@ public class EnumEx {
 	}
 	
 	private static void usingEnum() {
-		Week today = Week.TUSEDAY;
+		Week today = Week.TUESDAY;
 		
 		System.out.printf("Today is %s(%d)%n", 
 							today.name(), // 열거 상수 -> String
@@ -40,15 +40,15 @@ public class EnumEx {
 
 	private static void switchEnumPractice() {
 		// ConditionalEx::switchPractice의 enum 버전
-		Week day =Week.TUESDAY;
+		Week day = Week.TUESDAY;
 		String action;
 		
 		switch (day) {
-		case "SUNDAY":
+		case SUNDAY:
 			action = "휴식";
 			break;
 		case MONDAY:
-		case TUSEDAY:
+		case TUESDAY:
 		case WEDNESDAY:
 		case THURSDAY:
 			action = "열공";
@@ -66,5 +66,5 @@ public class EnumEx {
 		
 		System.out.println(day.name() + " 에는 " + action);
 	}
-	}
 }
+

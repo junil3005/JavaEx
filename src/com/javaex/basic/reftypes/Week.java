@@ -3,10 +3,10 @@ package com.javaex.basic.reftypes;
 public enum Week {
 	SUNDAY,
 	MONDAY,
-	TUSEDAY,
+	TUESDAY,
 	WEDNESDAY,
 	THURSDAY,
 	FRIDAY,
-	SAYURDAY
+	SATURDAY,
 
 }
