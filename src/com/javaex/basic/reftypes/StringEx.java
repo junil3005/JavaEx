@@ -3,7 +3,6 @@ package com.javaex.basic.reftypes;
 public class StringEx {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 //		usingString();
 		stringFormatEx();
 
@@ -38,7 +37,7 @@ public class StringEx {
 													fruit,
 													eat);
 		// string.format 메서드 활용한 것
-		String template = "d개의 %s중에 %ㅇd개를 먹었다";  // 템플릿 만듬
+		String template = "%d개의 %s중에 %d개를 먹었다";  // 템플릿 만듬
 		System.out.println(String.format(template, 
 												10, 
 												"사과",
