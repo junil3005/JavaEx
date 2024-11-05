@@ -9,7 +9,7 @@ public class LoopEx {
 //		whileGuGu();
 //		doWhileEx();
 //		forGugu();
-		randomEx();
+//		randomEx();
 
 	}
 
@@ -94,7 +94,7 @@ public class LoopEx {
 
 		// for문 버전
 		for (int i = 0; i < 6; i++) {
-			System.out.println((int) (Math.random() * 45) + 1);
+			System.out.println((int)(Math.random() *45)+1);
 			System.out.println("\t");
 		}
 		System.out.println();
@@ -102,8 +102,8 @@ public class LoopEx {
 		// while문 버전
 		int i = 0;
 
-		while (i < 6) {
-			System.out.println((int) (Math.random() * 45) + 1);
+		while (i<6) {
+			System.out.println((int)(Math.random() *45)+1);
 			System.out.println("\t");
 			++i;
 		}

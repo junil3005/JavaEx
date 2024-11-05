@@ -9,7 +9,7 @@ public class ConditionalEx {
 //		ifEx2();
 //		ifPractice01();
 //		switchEx();
-		switchEx2();
+//		switchEx2();
 //		switchPractice();
 //		switchPractice2();
 	}
@@ -31,39 +31,39 @@ public class ConditionalEx {
 
 		scanner.close();
 	}
-
-	private static void ifEx2() {
-		// if ~ else if ~ else ~
+//
+//	private static void ifEx2() {
+//		// if ~ else if ~ else ~
 	// 정수 입력 받아서 양수, 0, 음수인지 판별
-		Scanner scanner = new Scanner(System.in);
-		System.out.print("정수를 입력하세요:");
+//		Scanner scanner = new Scanner(System.in);
+//		System.out.print("정수를 입력하세요:");
 
 		// 조건 1: 0 체크 -> 나머지: 양수 or 음수
 		// 조건 2: 양수 체크 -> 나머지 : 음수
 		
 		// 일반적인 순차 조건 분기
-		/
-		if (num == 0) {
-			System.out.println("0입니다.");
-		} else if (num > 0) {
-			System.out.println("양수입니다.");
-		} else {
-			System.out.println("음수입니다.");
-		}
-	
-	// 중첩 if
-		if (num == 0) {
-			System.out.println("0입니다.");
-		} else {
-			// 양수 or 음수
-			if (num > 0) {
-				System.out.println("양수입니다.");
-			} else {
-				System.out.println("음수입니다.");
-			}
-		}
-		scanner.close();
-	}
+//		/
+//		if (num == 0) {
+//			System.out.println("0입니다.");
+//		} else if (num > 0) {
+//			System.out.println("양수입니다.");
+//		} else {
+//			System.out.println("음수입니다.");
+//		}
+//	
+//	// 중첩 if
+//		if (num == 0) {
+//			System.out.println("0입니다.");
+//		} else {
+//			// 양수 or 음수
+//			if (num > 0) {
+//				System.out.println("양수입니다.");
+//			} else {
+//				System.out.println("음수입니다.");
+//			}
+//		}
+//		scanner.close();
+//	}
 	
 			private static void ifPractice01() {
 				// 과목번호 입력 -> 강의실 번호 출력
@@ -172,49 +172,49 @@ public class ConditionalEx {
 		// "FRIDAY" -> 열공 후 불금
 		// "SATURDAY" -> 주말
 		
-		String day = "SATURDAY";
-		String action;
-		
-		switch (day) {
-		case "SUNDAY":
-			action = "휴식";
-			break;
-		case "MONDAY":
-		case "TUSEDAY":
-		case "WEDNESDAY":
-		case "THURSDAY":
-			action = "열공";
-			break;
-		case "SATURDAY":
-			action = "주말";
-			break;
-		default:
-			action = "난 누구지?";
-			break;
-		}
-		
-		System.out.println(day + "에는 " + action);
-	}
+//		String day = "SATURDAY";
+//		String action;
+//		
+//		switch (day) {
+//		case "SUNDAY":
+//			action = "휴식";
+//			break;
+//		case "MONDAY":
+//		case "TUSEDAY":
+//		case "WEDNESDAY":
+//		case "THURSDAY":
+//			action = "열공";
+//			break;
+//		case "SATURDAY":
+//			action = "주말";
+//			break;
+//		default:
+//			action = "난 누구지?";
+//			break;
+//		}
+//		
+//		System.out.println(day + "에는 " + action);
+//	}
 	
-	private static void switchPractice2() {
-		
-		Scanner scanner = new Scanner(System.in);
-		System.out.println("점수를 입력하세요");
-		
-		int score = scanner.nextInt();
-		
-		if (score >= 90) {
-		System.out.println("A등급");
-		} else if ( score 80 <= 89) {
-		System.out.println("B등급");
-		} else if (score 70 <= 79) {
-			System.out.println("C등급");
-		} else if (score 60 <= 69) {
-			System.out.println("D등급");
-		} else (score < 60) {
-			System.out.println("F등급");
-		}
-		
+//	private static void switchPractice2() {
+//		
+//		Scanner scanner = new Scanner(System.in);
+//		System.out.println("점수를 입력하세요");
+//		
+//		int score = scanner.nextInt();
+//		
+//		if (score >= 90) {
+//		System.out.println("A등급");
+//		} else if ( score 80 <= 89) {
+//		System.out.println("B등급");
+//		} else if (score 70 <= 79) {
+//			System.out.println("C등급");
+//		} else if (score 60 <= 69) {
+//			System.out.println("D등급");
+//		} else (score < 60) {
+//			System.out.println("F등급");
+//		}
+//		
 		
 		
 		
