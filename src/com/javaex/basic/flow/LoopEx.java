@@ -8,28 +8,26 @@ public class LoopEx {
 //		whileEx();
 //		whileGuGu();
 //		doWhileEx();
-		forGugu();
+//		forGugu();
+		randomEx();
 
 	}
 
-//		private static void whileEx() {
-//			// while (condition) { }
-//			// : condition이 참인 동안 블록을 반복
-//			/*
-//			 * I Like Java0
-//			 * I Like Java1
-//			 * I Like Java2
-//			 * I Like Java3
-//			 * I Like Java4
-//			 */
-//			int i = 0; //	반복 제어 변수
-//			
-//			while ( i < 5 ) {
-//				System.out.println("I Like Java" + i);
-//				// 주의: 반복 제어변수를 잘 조정해야 한다.
-//				i += 1;
-//			}
-//		}
+	private static void whileEx() {
+		// while (condition) { }
+		// : condition이 참인 동안 블록을 반복
+		/*
+		 * I Like Java0 I Like Java1 I Like Java2 I Like Java3 I Like Java4
+		 */
+		int i = 0; // 반복 제어 변수
+
+		while (i < 5) {
+			System.out.println("I Like Java" + i);
+			// 주의: 반복 제어변수를 잘 조정해야 한다.
+			i += 1;
+		}
+	}
+
 //		
 	private static void whileGuGu() {
 		// 단을 입력받아서 해당 단의 구구단을 출력\
@@ -86,5 +84,29 @@ public class LoopEx {
 		}
 
 		scanner.close();
+
 	}
+
+	private static void randomEx() {
+		// Math 클래스 : 수학 상수, 수학 함수를 모아둔 클래스
+		// 1 ~ 45까지의 정수 난수 6개를 추출하는 예제
+		// (int)(Math.random()*최대값)+최소값
+
+		// for문 버전
+		for (int i = 0; i < 6; i++) {
+			System.out.println((int) (Math.random() * 45) + 1);
+			System.out.println("\t");
+		}
+		System.out.println();
+
+		// while문 버전
+		int i = 0;
+
+		while (i < 6) {
+			System.out.println((int) (Math.random() * 45) + 1);
+			System.out.println("\t");
+			++i;
+		}
+	}
+
 }
