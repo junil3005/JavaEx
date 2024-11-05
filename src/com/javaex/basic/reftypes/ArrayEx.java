@@ -1,20 +1,22 @@
 package com.javaex.basic.reftypes;
 
+import java.util.Arrays;
+
 public class ArrayEx {
 
 	public static void main(String[] args) {
-		usingArray();
+//		usingArray();
+		multiDimArrayEx();
 
 	}
-
 	private static void usingArray() {
 		// 배열의 선언과 초기화, 사용
 		// 선언
-		String[] name; // Type[] 식별자
+		String[] names; // Type[] 식별자
 		int scores[];  // Type 식별자[]
 		
 		// 초기화
-		name = new String[] {
+		names = new String[] {
 				"김", "이", "박", "최"
 		}; // 초기값이 있을 때
 		
@@ -30,16 +32,61 @@ public class ArrayEx {
 		float heights[] = {
 			 175.3f,
 			 170.2f,
-				173.4f,
-				168.5f			
+			 173.4f,
+			 168.5f			
 		}; //	선언과 동시에 할 때만 가능
 		
 		// name, score, heights -> 같은 인덱스에 접근해서 확인
-		for (int i = 0; i < names.lenght; ++i) {
-			System.out.printf("%s (%.2f) : score = %d%n", name[i],
+		for (int i = 0; i < names.length; ++i) {
+			System.out.printf("%s (%.2f) : score = %d%n", names[i],
 														heights[i],
-														scores[i];	
+														scores[i]);	
 		}
+		
+		// scores 배열이 있음
+		int scores2[] = scores; // 참조 복제
+		// 참조 복제 -> 객체의 주소를 복사하는 것
+		
+		System.out.println("scores:" + Arrays.toString(scores));
+		System.out.println("scores2:" + Arrays.toString(scores2));
+		scores2[2] = 100;
+		System.out.println("scores2:" + Arrays.toString(scores2));
+		System.out.println("scores:" + Arrays.toString(scores));
 
+	}
+	
+	private static void multiDimArrayEx() {
+		// 5행 10열의 2차원 배열
+		int[][] twoDimens = new int[5][10]; // 빈 2차원 배열 
+		
+		// 기본 데이터가 있을 경우
+		int table[][] = {
+				{1, 2, 3, 4, 5, 6, 7, 8, 9, 0 },
+				{2, 3, 4, 5, 6, 7, 8, 9, 0, 1 },
+				{3, 4, 5, 6, 7, 8, 9, 0, 1, 2 },
+				{4, 5, 6, 7, 8, 9, 0, 1, 2, 3 },
+				{5, 6, 7, 8, 9, 0, 1, 2, 3, 4 }
+				
+		};
+		
+		System.out.println("table.length: " + table.length);
+		// 인덱스 범위: table[0] ~ table[table.length - 1]
+		System.out.println("table[0].length: " + table[0].length);
+		// 인덱스 범위: table[0][0] ~ table[0][table[0].length - 1]
+		
+		// table 배열 내부의 모든 요소의 합을 구하자
+		int sum = 0;
+		for (int row = 0; row < table.length; ++row) { // 행 루프
+			for (int co1 = 0; co1 < table[row].length; ++co1) { // 열 루프
+				int val = table[row][co1];
+				
+				System.out.print(val + "\t");
+				sum += val; // 내부 cell 데이터 합산
+			}
+			System.out.println();
+		}
+		
+		System.out.println("합산 결과:" + sum);
+		
 	}
 }
