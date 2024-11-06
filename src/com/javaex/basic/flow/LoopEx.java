@@ -48,7 +48,7 @@ public class LoopEx {
 	}
 
 	private static void doWhileEx() {
-		// 입력 받은 정ㅅ구를 다 더한다
+		// 입력 받은 정수를 다 더한다
 		// 입력 받은 정수가 0이면 반복하지 않는다.
 		int total = 0; // 합산 변수
 		int value = 0; // 더해주는 수, 반복 제어 변수
