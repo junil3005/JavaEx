@@ -5,12 +5,12 @@ import java.util.Scanner; //ctrl + shift + o // 데이터 가져오기
 public class ConditionalEx {
 
 	public static void main(String[] args) {
-		ifEx();
-		ifEx2();
+//		ifEx();
+//		ifEx2();
 		ifPractice();
-		switchEx();
-		switchEx2();
-		switchPractice();
+//		switchEx();
+//		switchEx2();
+//		switchPractice();
 
 	}
 

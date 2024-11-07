@@ -9,12 +9,12 @@ import java.util.Scanner;
 // 표준 입력 : stdin -> System.in
 // 표준 출력 : stdout -> System.out
 // 표준 에러 : stderr -> System.err
-public class ConsoleEx {
+	public class ConsoleEx {
 	
 
 	public static void main(String[] args) {
-		consoleOutput();
-		consoleInput();
+//		consoleOutput();
+//		consoleInput();
 		
 	}
 	

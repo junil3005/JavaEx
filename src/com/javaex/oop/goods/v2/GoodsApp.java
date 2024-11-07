@@ -1,7 +1,7 @@
 package com.javaex.oop.goods.v2;
 
 // Goods v1. 필드
-class Goods {  // 디폴트
+class Goods {  // 디폴트생략
 	// 필드 선언 -> private
 	 String name;  // private
 	 int price;	  // private

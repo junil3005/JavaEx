@@ -7,7 +7,7 @@ public class intLongEx {
 	public static void main (String[] args) {
 		// 선언 
 		int intVar1;
-		int intVar2;
+//		int intVar2;
 		
 		// 초기화
 		intVar1 = 2024;
