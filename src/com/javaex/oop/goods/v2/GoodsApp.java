@@ -10,7 +10,7 @@ class Goods {  // 디폴트생략
 	private int price;	  // private
 	
 	// Getters / Setters
-	public String getName() { // 규칙
+	ㅇpublic String getName() { // 규칙
 		return name; // 네임필드를 위한 게터
 		
 	}

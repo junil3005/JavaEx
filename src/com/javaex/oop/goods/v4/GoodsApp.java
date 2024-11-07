@@ -55,9 +55,9 @@ class Goods {  // 디폴트생략
 			camera.showInfo();
 //			
 			
-			Goods notebook = new Goods();
-			notebook.setName("LG그램");
-			notebook.setPrice(900_0000);
+//			Goods notebook = new Goods();
+//			notebook.setName("LG그램");
+			Goods notebook = new Goods.("LG그램" , 900_0000);
 			
 			notebook.showInfo(); // System.out.println 대신 사용함
 			
