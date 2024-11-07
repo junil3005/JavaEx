@@ -4,11 +4,13 @@ package com.javaex.oop.goods.v2;
 class Goods {  // 디폴트생략
 	// 필드 선언 -> private
 	// 정보는 은닉하고 Getter와 Setter를 통한 우회 접근이 필요
+	//	데이터를 다루는 기능 (메서드) 함께 구현
+	
 	private String name;  // private
 	private int price;	  // private
 	
 	// Getters / Setters
-	public String getName() {
+	public String getName() { // 규칙
 		return name; // 네임필드를 위한 게터
 		
 	}
@@ -25,6 +27,13 @@ class Goods {  // 디폴트생략
 	
 	public void setPrice(int price) {
 		this.price = price;
+		
+	}
+	
+	// 일반 메서드 
+	public void showInfo() {
+		System.out.println("상품명:" + name);
+		System.out.printf("가격: %,d원%n", price);
 		
 	}
 	
@@ -45,24 +54,22 @@ class Goods {  // 디폴트생략
 //		System.out.printf("%s -> %,d%n", camera.name,
 ////				camera.price);
 //		
-		System.out.printf("%s -> %,d%n", camera.getName(),
-				camera.getPrice());
-		
+//		System.out.printf("%s -> %,d%n", camera.getName(),
+//				camera.getPrice());
+		camera.showInfo();
+//		
 		
 		Goods notebook = new Goods();
 		notebook.setName("LG그램");
 		notebook.setPrice(900_0000);
 		
-		System.out.printf("%s -> %,d%n", notebook.getName(),
-					notebook.getPrice());
+		notebook.showInfo(); // System.out.println 대신 사용함
 		
 		Goods mug = new Goods();
 		mug.setName("머그컵");
 		mug.setPrice(2_000);
 		
-		System.out.printf("%s - > %,d%n", mug.getName(),
-				mug.getPrice());
-
+		mug.showInfo();
 	}
 
 	 		
