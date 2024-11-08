@@ -17,6 +17,14 @@ class Point {
 	}
 	
 	// Getters/Setters
+	public int getX() {
+		return x;
+	}
+	
+	public void setX(int x) {
+		this.x = x;
+	}
+	
 	public int getY() {
 		return y;
 	}
@@ -36,12 +44,12 @@ class Point {
 
 	public static void main(String[] args) {
 	Point p1 = new Point();
-	p1.sext(5);
+	p1.setX(5);
 	p1.setY(5);
 	p1.draw();  // show info(); 랑 같은 개념
 	
 	Point p2 = new Point();
-	p2.setx(10);
+	p2.setX(10);
 	p2.setY(23);
 	p2.draw();
 
