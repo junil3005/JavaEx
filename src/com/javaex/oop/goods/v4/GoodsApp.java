@@ -1,5 +1,6 @@
 package com.javaex.oop.goods.v4;
 
+
 //	Goods v4 this
 //	this -> 현재 인스턴스 자체를 지칭
 //	this(...) -> 현재 클래스 내부의 다른 생성자를 지칭
@@ -57,14 +58,15 @@ class Goods {  // 디폴트생략
 			
 //			Goods notebook = new Goods();
 //			notebook.setName("LG그램");
-			Goods notebook = new Goods.("LG그램" , 900_0000);
-			
+//			notebook.setPrice(900_000);
+			Goods notebook = new Goods("LG그램" , 900_0000);
+//			notebook.setPrice(1_000);
 			notebook.showInfo(); // System.out.println 대신 사용함
 			
-			Goods mug = new Goods();
-			mug.setName("머그컵");
-			mug.setPrice(2_000);
-			
+//			Goods mug = new Goods();
+//			mug.setName("머그컵");
+//			mug.setPrice(2_000);
+			Goods mug = new Goods("머그컵", 2_000);
 			mug.showInfo();
 		}
 

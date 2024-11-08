@@ -1,16 +1,17 @@
 package com.javaex.oop.point.V2;
 
-//	v2
+//		v2
 class Point {
 	// 필드 
 	private int x;
 	private int y;
 	
-
+	//	기본 생성자
 	public Point() {
 	}
 	
 	public Point(int x, int y) {
+		//	초기화
 		this.x = x;
 		this.y = y;
 	}
@@ -25,17 +26,17 @@ class Point {
 		
 	}
 	
-	// 메서드
+	// 		메서드
 	public void draw() {
 		System.out.printf("점[x=%d, y=%d]을 그렸습니다.%n", x, y);
 	}
 	
 }
-public class PointApp {
+	public class PointApp {
 
 	public static void main(String[] args) {
 	Point p1 = new Point();
-	p1.setx(5);
+	p1.sext(5);
 	p1.setY(5);
 	p1.draw();  // show info(); 랑 같은 개념
 	
@@ -45,5 +46,7 @@ public class PointApp {
 	p2.draw();
 
 	}
-
+	
 }
+
+
