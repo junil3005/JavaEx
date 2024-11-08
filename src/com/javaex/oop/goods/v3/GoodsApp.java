@@ -1,6 +1,6 @@
 package com.javaex.oop.goods.v3;
 
-import com.javaex.oop.goods.v2.Goods;
+import com.javaex.oop.goods.v3.Goods;
 
 //	Goods v3. 생성자
 //	생성자가 만들어져 있지 않으면 JVM이 기본생성자를 끼워 넣는다.

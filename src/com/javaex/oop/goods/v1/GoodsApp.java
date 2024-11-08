@@ -31,7 +31,7 @@ class Goods {  // 디폴트
 		
 		System.out.printf("%s - > %,d%n", mug.name,
 				mug.price);
-
+		
 	}
 
 	 		
