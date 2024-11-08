@@ -3,7 +3,7 @@ package com.javaex.oop.casting;
 public class AnimalApp {
 
 	public static void main(String[] args) {
-		//	upcasing : 부모 타입으로 자식 인스턴스 참조
+		//	UPcasting : 부모 타입으로 자식 인스턴스 참조
 		Animal dog1 = new Dog("Snoopy");
 		dog1.eat();
 		dog1.walk();
@@ -18,22 +18,21 @@ public class AnimalApp {
 		pet.eat();
 		pet.walk();
 		
-		//	Downcastuing : 부모 타입으로 참조되던 타입을
-//		//					원랴댜로 되도리는 것
-//		((Dog)pet).bark();
+		//	Downcasting : 부모 타입으로 참조되던 타입을 원래대로 되돌리는 것			
+		((Dog)pet).bark();
 	
 		
-		pet = new cat("Yaong");
+		pet = new Cat("Yaong");
 		pet.eat();
 		pet.walk();
 		
 //		캐스팅 해당 객체가 캐스팅 가능 객체인지 확인
-		if (pet inseance Dog) {
+		if (pet instanceof Dog) {
 			((Dog)pet).bark();
-		} else if (pet instance )
-//		((Dog)pet).bark();
+		} else if (pet instanceof Cat ) {
+		((Cat)pet).meow();
 		
-
+		}
 	}
 
 }
