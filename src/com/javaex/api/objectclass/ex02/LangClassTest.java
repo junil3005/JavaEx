@@ -2,23 +2,18 @@
 package com.javaex.api.objectclass.ex02;
 
 public class LangClassTest {
-
+	
 	public static void main(String[] args) {
-		Point p = new Point(10,10);
-		Point p2 = new Point(10,10);
+		Point p = new Point(10, 10);
+		Point p2 = new Point(10, 10);
 		
-		//	JAVA의 최상의 클래스는 Object
-		//	-> 기본적으로 Object의 모든 기능을 상속
-		System.out.println(p.getClass().getName());
-		System.out.println(p.hashCode());	//  객체 식별자
-		System.out.println(p.toString());	//	객체 내부 데이터를 문자열로 반환
-		System.out.println(p);	// 문자열 정보가 필요할 때, toString()을 호출한다.
+		System.out.println(p == p2);
+		System.out.println(p.equals(p2));
 		
-		//	p의 부모 객체를 받아와서 확인
-		System.out.println(p.getClass()
-							.getSuperclass()
-							.getName());
-
+		String s1 = new String("Java");
+		String s2 = new String("Java");
+		
+		System.out.println(s1 == s2);
+		System.out.println(s1.equals(s2));
 	}
-
 }
