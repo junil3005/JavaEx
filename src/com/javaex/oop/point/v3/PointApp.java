@@ -7,8 +7,8 @@ class Point {
 	protected int y;
 	
 	//	기본 생성자
-//	public Point() {
-//	}
+	public Point() {
+	}
 	
 	public Point(int x, int y) {
 		this.x = x;
@@ -99,7 +99,7 @@ class Point {
 		message += bShow ? "그렸습니다.": "지웠습니다.";
 		System.out.println(message);
 		
-		//	오버라이드 했지만 부모으 기능을 사용해야 할 때 
+		//	오버라이드 했지만 부모의 기능을 사용해야 할 때 
 		super.draw(bShow);
 	}
 }
@@ -107,31 +107,19 @@ class Point {
 public class PointApp {
 
 	public static void main(String[] args) {
-//	Point p1 = new Point();
-//	p1.setX(5);
-//	p1.setY(5);
-	Point p1 = new Point(5, 5);
-	p1.draw();  // show info(); 랑 같은 개념
-	p1.draw(true);
-	p1.draw(false);
-	
-	
-//	Point p2 = new Point();
-//	p2.setX(10);
-//	p2.setY(23);
-	Point p2 = new Point(10 , 23);
-	p2.draw();
-	p2.draw(true);
-	p2.draw(false);
-	
-	ColorPoint cp1 = new ColorPoint("red");
-	cp1.draw();
-	cp1.draw(true);
-	
-	ColorPoint cp2 = new ColorPoint(10,10, "blue");
-	cp2.draw();
-	cp2.draw(false);
-
+		Point p1 = new Point();
+		p1.setX(5);
+		p1.setY(5);
+		p1.draw();
+		p1.draw(true);
+		p1.draw(false);
+		
+		Point p2 = new Point();
+		p2.setX(10);
+		p2.setY(23);
+		p2.draw();
+		p2.draw(true);
+		p2.draw(false);
 	}
 
 }

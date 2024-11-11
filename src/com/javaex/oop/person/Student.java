@@ -34,3 +34,4 @@ public class Student extends Person {
 		
 	}
 }
+int max (int a , int b) { 
