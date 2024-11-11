@@ -1,5 +1,6 @@
 package com.javaex.exception;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class ExceptionHandlingEx {
@@ -7,11 +8,11 @@ public class ExceptionHandlingEx {
 	public static void main(String[] args) {
 //		arithExceptionEx();
 		arrayExceptionEx();
-		nullPointerException();
+		nullPointerExceptionEx();
 
 	}
 	
-	private static arrayExceptionEx() {
+	private static void arrayExceptionEx() {
 		int[] intArray = new int[] { 3, 6, 9 };
 		
 		try {
