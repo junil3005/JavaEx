@@ -12,7 +12,7 @@ public class ExceptionHandlingEx {
 	}
 	
 	private static arrayExceptionEx() {
-		int[] intarray = new int[] { 3, 6, 9 };
+		int[] intArray = new int[] { 3, 6, 9 };
 		
 		try {
 			System.out.println(intArray[3]);
