@@ -42,7 +42,12 @@ public class WrapperEx {
 		Integer i4 = Integer.valueOf(2024);
 		Integer i5 = Integer.valueOf(2024);
 		
-		System.out.println(i4 == i5);
+		System.out.println(i4 == i5);	//	false -> 주의
+
+		//	언박싱 비교
+		System.out.println(i4.intValue() == i5.intValue());
+		
+		System.out.println(i4.equals(i5));
 		
 		
 
