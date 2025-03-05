@@ -6,7 +6,7 @@ public class LoopEx {
 
 	public static void main(String[] args) {
 //		whileEx();
-//		whileGuGu();
+		whileGuGu();
 //		doWhileEx();
 //		forGugu();
 //		randomEx();
@@ -14,7 +14,7 @@ public class LoopEx {
 	}
 
 	private static void whileEx() {
-		// while (condition) { }
+		// while (co0ndition) { }
 		// : condition이 참인 동안 블록을 반복
 		/*
 		 * I Like Java0 I Like Java1 I Like Java2 I Like Java3 I Like Java4
@@ -62,8 +62,8 @@ public class LoopEx {
 			value = scanner.nextInt();
 			total += value;
 			System.out.println("합계:" + total);
-		} while (value != 0);
-
+		} while (value != 0); 
+			System.out.println("종료");
 		scanner.close();
 	}
 

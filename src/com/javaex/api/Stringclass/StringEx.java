@@ -5,9 +5,9 @@ import java.util.Arrays;
 public class StringEx {
 
 	public static void main(String[] args) {
-//	stringBasic();
+	stringBasic();
 //	usefulMethods();	
-	stringBufferEx();	
+//	stringBufferEx();	
 
 	}
 
